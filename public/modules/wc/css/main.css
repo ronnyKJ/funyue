@@ -1,0 +1,623 @@
+html{height:100%;width:100%;overflow: hidden;}
+body{
+	margin: 0;
+	font-size: 14px;
+	width: 100%;
+	height: 100%;
+	color: #686868;
+	overflow: hidden;
+}
+
+.container{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.swiper-container{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+.swiper-slide{
+	position: relative;
+}
+
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/******** 启动页 ************/
+.start-page{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: transparent url(/public/modules/wc/img/start.jpg);
+	background-size: cover;
+	-webkit-transition: 0.5s;
+	background-position: center center;
+	z-index: 2;
+}
+/******** 启动页 ************/
+
+/******** 封面 ************/
+
+.cover{
+	position: relative;
+	background-color: #000;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	color: #FFF;
+}
+
+.cover .datetime{
+	position: absolute;
+	left: 20px;
+	top: 10px;
+	z-index: 1;
+}
+
+.cover .date{
+	display: inline;
+	font-size: 25px;
+}
+
+.cover .time{
+	font-size: 13px;
+	display: block;
+}
+
+.cover .calendar{
+	display: inline-block;
+	position: absolute;
+	background: transparent url(/public/modules/wc/img/com-1.png) no-repeat;
+	background-size: 168px;
+	background-position: -90px -2px;
+	right: 20px;
+	top: 16px;
+	width: 36px;
+	height: 33px;
+	z-index: 2;
+}
+
+.cover .day-count{
+	position: absolute;
+	bottom: 60px;
+	width: 100%;
+	text-align: center;
+}
+
+.cover .day-count .logo{
+	display: inline-block;
+	position: relative;
+	top: 15px;
+	width: 70px;
+	height: 70px;
+	background-image: url(/public/modules/wc/img/com-1.png);
+	background-repeat: no-repeat;
+	background-size: 158px;
+}
+
+.cover .day-count .right{
+	display: inline-block;
+}
+
+.cover .day-count .title{
+	float: left;
+	font-size: 14px;
+}
+
+.cover .day-count .char{
+	font-size: 44px;
+	position: relative;
+	top: 5px;
+}
+
+.cover .day-count .num{
+	font-size: 44px;
+	border: #999999 1px solid;
+	border-radius: 4px;
+	padding: 5px;
+	position: relative;
+	top: 5px;
+	margin: 0 2px;
+	color: #ff3c00;
+	height: 38px;
+	line-height: 39px;
+	display: inline-block;
+}
+
+.cover .day-count .count{
+	clear: both;
+}
+
+.cover .start{
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	color: #808080;
+	font-size: 20px;
+}
+
+.cover .start img{
+	width: 20px;
+	margin-right: 9px;
+}
+
+/******** 封面 ************/
+
+/******** 日报页面 ************/
+.news-page, .page .top, .news-page-wrapper{
+	width: 100%;
+	height: 100%;
+}
+
+.page{
+	background-color: #FFF;
+	text-align: left;
+	width: 100%;
+}
+
+.page .top{
+	position: relative;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.alpha{
+	position: absolute;
+	z-index: 1;
+	height: 200px;
+	width: 100%;
+	background-image: url(/public/modules/wc/img/com-1.png);
+	background-repeat: repeat-x;
+	background-position-y: -760px;
+	opacity: 0.9;
+}
+
+.alpha.b-alpha{
+	bottom: 0;
+	z-index: 0;
+	background-position-y: -390px;
+	opacity: 1;
+}
+
+.page .picture{
+	height: 70%;
+	background-size: cover;
+	position: relative;
+	background-color: #444;
+	background-position: center center;
+}
+
+.page .picture .white-mask{
+	width: 200%;
+	height: 100px;
+	margin-left: -50%;
+	-webkit-transform: rotate(10deg);
+	background-color: #FFF;
+	position: absolute;
+	bottom: -66px;
+}
+
+.page .top .content{
+	position: absolute;
+	bottom: 10px;
+	left: 15px;
+	right: 15px;
+	z-index: 2;
+	text-align: left;
+	color: #000;
+}
+.page .top .content .tip{
+	text-align: center;
+	color: #999;
+	margin-top: 30px;
+}
+
+.page .top .content .line{
+	margin: 5px 0;
+}
+
+.page .top .content .type{
+	color: #ff0000;
+	font-size: 14px;
+}
+
+.page .top .content .type .ball{
+	display: inline-block;
+	background-color: red;
+	font-size: 10px;
+	color: #FFF;
+	border-radius: 20px;
+	width: 14px;
+	height: 14px;
+	text-align: center;
+	line-height: 15px;
+	font-weight: normal;
+	margin-right: 4px;
+	position: relative;
+	top: -1px;
+}
+
+.page .top .content .title{
+	font-size: 24px;
+}
+
+.page .top .resource{
+	color : #999999;
+	font-size : 12px;
+}
+
+.page .top .source{
+	position : relative;
+	top : 2px;
+	
+}
+
+.page .top .source a{
+	color : #999999;
+	text-decoration: none;
+}
+
+.page .top .content .view{
+	float: right;
+	padding-left: 18px;
+	height: 20px;
+	line-height: 20px;
+	background-size: 84px;
+}
+
+.page .bottom{
+	padding: 21px;
+	padding-bottom: 30px;
+	color: #111111;
+	font-size: 18px;
+	line-height: 32px;
+}
+
+.page .bottom img{
+	max-width: 100%;
+}
+
+.page .bottom ul{
+	list-style: disc;
+	margin-left : 20px;
+	padding-left: 10px;
+}
+
+/******** 日报页面 ************/
+
+
+/******** 播放器 ************/
+.muplayer{
+	position: absolute;
+	width: 110px;
+	height: 110px;
+	left: 50%;
+	margin-left: -55px;
+	bottom: -30px;
+	background: transparent url(/public/modules/wc/img/com-1.png) no-repeat 0px -71px;
+	background-size: 110px;
+	z-index: 6;
+}
+
+.muplayer .mucontrol{
+	background-image: url(/public/modules/wc/img/com.png);
+	background-repeat: no-repeat;
+	background-size: 126px;
+	margin: 23px auto;
+	width: 40px;
+	height: 40px;
+}
+
+.muplayer .mucontrol.play{
+	background-position: -70px -367px;
+	width: 54px;
+	height: 50px;
+	margin: 21px auto;
+}
+
+.muplayer .mucontrol.pause{
+	background-position: -91px -307px;
+}
+
+.muplayer .progress{
+	position: absolute;
+	font-size: 10px;
+	text-align: center;
+	width: 100%;
+	bottom: 25px;
+	-webkit-transform: scale(0.8);
+}
+
+.muplayer .red{
+	color: #F00;
+}
+
+.muplayer .gray{
+	color: #999;
+}
+
+/******** 播放器 ************/
+
+
+/******** 资讯 - 新闻 ************/
+
+.news-article-title{
+	text-align: left;
+	font-size: 33px;
+	margin: 60px 20px 20px;
+	text-shadow: rgba(0,0,0,0.2) 0px 2px 0px;
+	color: #262626;
+}
+
+.news-article-title .big{
+	font-size: 53px;
+	font-weight: bold;
+}
+
+.news-article-intro, .news-video-intro{
+	text-align: left;
+	margin: 10px 25px;
+	line-height: 20px;
+	font-size: 13px;
+	color: #777777;
+}
+
+.no-news-tip{
+	margin-top: 100px;
+}
+
+.ad{
+	height: 60px;
+	display: block;
+	text-align: center;
+}
+/******** 资讯 - 新闻 ************/
+
+/******** 资讯 - 视频 ************/
+.news-video{
+	
+}
+
+.news-video-time{
+	text-align: right;
+	font-size: 12px;
+	margin-right: 25px;
+}
+
+.news-video video{
+	width: 100%;
+}
+/******** 资讯 - 视频 ************/
+
+/******** 分享 ************/
+.share{
+	height: 70px;
+	text-align: center;
+	position: relative;
+	margin-top: 50px;
+}
+
+.share .share-btn{
+	width: 38px;
+	height: 40px;
+	background-size: 119px;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 7px;
+}
+
+.share .weibo{
+	background-image: url(/public/modules/wc/img/com.png);
+	background-repeat: no-repeat;
+	background-position-y: -332px;
+	position: absolute;
+	right: 10px;
+	top: 13px;
+}
+
+.share .up, .share .down{
+	width: 60px;
+	height: 60px;
+	background-size: 102px;
+	display: inline-block;
+	margin: 0 4px;
+}
+
+.share .up, .share .down, .share .up.disabled, .share .down.disabled{
+	background-image: url(/public/modules/wc/img/com.png);
+	background-repeat: no-repeat;
+}
+
+.share .down{
+	background-position-y: -120px;
+}
+
+.share .up.disabled{
+	background-position-y: -60px;
+}
+
+.share .down.disabled{
+	background-position-y: -180px;
+}
+
+.share .tap{
+	/*-webkit-transform: scale(0.7, 0.7);*/
+	/*-webkit-transition: 0.15s ease;*/
+	-webkit-animation: attitude 0.5s;
+}
+
+@-webkit-keyframes attitude{
+	0%   { -webkit-transform: scale(1, 1); }
+	30%  { -webkit-transform: scale(0.7, 0.7); }
+	60%  { -webkit-transform: scale(1, 1); -webkit-transform: rotate(0deg);}
+	70%  { -webkit-transform: rotate(-30deg); }
+	85%  { -webkit-transform: rotate(30deg); }
+	100% { -webkit-transform: rotate(0deg); }
+}
+/******** 分享 ************/
+
+/******** 日历 ************/
+.calendar-swiper, .calendar-slide{
+	width: 100%;
+	height: 100%;
+	background: #f8f8f8;
+}
+
+.calendar-slide{
+	background: #f8f8f8;
+}
+
+li.month-mark, .calendar-month{
+	width: 100%;
+	height: 40px;
+	color: #F00;
+	text-align: left;
+	background: #FFF;
+	font-size: 18px;
+	border-bottom: #e2e2e2 1px solid;
+}
+
+.calendar-month{
+	position: absolute;
+	top: 0;
+	z-index: 2;
+}
+
+li.month-mark span, .calendar-month span{
+	margin-left: 15px;
+	height: 40px;
+	line-height: 40px;
+}
+
+.calendar-list li.month-mark{
+	height: 40px;
+}
+
+.calendar-list li{
+	height: 60px;
+	border-bottom: #e2e2e2 1px solid;
+	background: #FFF;
+}
+
+.calendar-list li .date{
+	font-size: 36px;
+	color: #000;
+	height: 60px;
+	line-height: 60px;
+	margin-left: 15px;
+	float: left;
+}
+
+.calendar-list li .date .ri{
+	font-size: 20px;
+}
+
+.calendar-list li .info{
+	float: right;
+	margin: 27px 24px 0 0;
+}
+
+.calendar-list li .progress{
+	font-size: 12px;
+	color: #999;
+	height: 24px;
+	line-height: 24px;
+}
+
+.calendar-list li .progress .per{
+	font-size: 14px;
+}
+
+.calendar-list li.today{
+	background: #FFF url(/public/modules/wc/img/com.png) no-repeat -127px 0px;
+	background-size: 190px;
+}
+
+.calendar-list li.today .date{
+	color: #FF0000;
+}
+
+.calendar-list li.future{
+	background: #f8f8f8;
+}
+
+.calendar-list li.future .date{
+	color: #ccc;
+}
+
+/******** 日历 ************/
+
+/******** 详情页 ************/
+.detail-frame{
+	background-color: rgba(255,255,255,1);
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+	overflow: hidden;
+	-webkit-transition: 0.2s;
+	font-size: 14px;
+	/*display: none;*/
+}
+
+.swiper-container.news-detail{
+	text-align: left;
+}
+
+.detail-frame img{
+	max-width: 100%;
+	height: auto;
+}
+
+.detail-container{
+	padding: 15px;
+	padding-top: 0px;
+}
+
+.detail-container p{
+	line-height: 18px;
+}
+
+.detail-container .title{
+	font-size: 18px;
+}
+
+.detail-container .des{
+	color: #bbbbbb;
+	margin-top: 5px;
+}
+
+.detail-container .content{
+	margin-top: 20px;
+	padding-bottom: 40px;
+}
+
+.news-detail{
+	margin-top: 34px;
+}
+
+.detail-frame .close{
+	position: absolute;
+	right: 5px;
+	top : -2px;
+	font-size: 35px;
+	-webkit-transform: rotate(45deg);
+	color: #777777;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	z-index: 4;
+}
+/******** 详情页 ************/

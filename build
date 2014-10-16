@@ -1,0 +1,23 @@
+cd ${PWD}
+cd ..
+
+cp -rf ./funyue/* ./funyue-backup
+rm -rf ./funyue-backup/node_modules
+
+cp -rf ./funyue/* ./adminsys
+cd ./adminsys
+grunt
+rm -rf ./node_modules
+
+cd ..
+cp -rf ./adminsys/* ./funyue-build
+cd ./funyue-build
+rm -rf ./node_modules
+rm -rf ./application/controllers/admin/article.php
+rm -rf ./application/controllers/admin/cover.php
+rm -rf ./application/controllers/api
+rm -rf ./application/controllers/crawler
+rm -rf ./application/views/admin
+rm -rf ./public/modules/admin
+
+

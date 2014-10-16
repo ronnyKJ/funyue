@@ -1,0 +1,22 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+
+$config['pagination']['per_page']         = 20; 
+$config['pagination']['uri_segment']      = 4;
+$config['pagination']['first_link']       = '首页';
+$config['pagination']['last_link']        = '尾页';
+$config['pagination']['next_link']        = '下一页';
+$config['pagination']['prev_link']        = '上一页';
+$config['pagination']['full_tag_open']    = '<ul class="pagination">';
+$config['pagination']['full_tag_close']   = '</ul>';
+$config['pagination']['first_tag_open']   = '<li>';
+$config['pagination']['first_tag_close']  = '</li>';
+$config['pagination']['last_tag_close']   = '</li>';
+$config['pagination']['last_tag_open']    = '<li>';
+$config['pagination']['num_tag_open']     = '<li>';
+$config['pagination']['num_tag_close']    = '</li>';
+$config['pagination']['prev_tag_open']    = '<li>';
+$config['pagination']['prev_tag_close']   = '</li>';
+$config['pagination']['next_tag_open']    = '<li>';
+$config['pagination']['next_tag_close']   = '</li>';
+$config['pagination']['cur_tag_open']     = '<li class="active"><a href="#">';
+$config['pagination']['cur_tag_close']    = '</a></li>';

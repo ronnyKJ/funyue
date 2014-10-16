@@ -1,0 +1,98 @@
+@import url(/public/vendor/bootstrap/dist/css/bootstrap.css);
+@import url(/public/vendor/bootstrap3-wysihtml5-bower/dist/bootstrap3-wysihtml5.min.css);
+@import url(/public/vendor/bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css);
+
+.pe-sidebar {
+    text-shadow: 0 1px 0 #fff;
+    padding: 10px 0;
+    width: 172px;
+}
+
+.pe-sidebar li > a {
+    border-radius: 0;
+}
+
+.pe-sidebar li > a:hover {
+    text-shadow: 0 1px 0 #fff;
+}
+
+.pe-sidebar li.active > a:hover {
+    text-shadow: 0 1px 0 #333;   
+}
+
+.pe-sidebar li.active > a {
+    color: #333;
+    border-left: 3px solid #428bca;
+    background: none;
+}
+
+.admin-player__list {
+    margin: 0;
+    padding: 0;
+}
+
+.admin-player__list li {
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 1rem 0;
+    width: 20%;
+    text-align: center;
+}
+
+.admin-player__list li a {
+    display: block;
+    padding: 1rem 0;
+}
+
+#articles td:last-child {
+    width: 100px;
+}
+
+#articles td.title img {
+    max-width: 72px;
+    max-height: 54px;
+}
+
+table.with-options td .options {
+    font-size: 12px;
+    margin-top: 5px;
+    visibility: hidden;
+}
+
+table.with-options td .options a {
+    color: #888;
+    padding: 5px 0;
+}
+
+table.with-options tr:hover .options {
+    visibility: visible;
+}
+
+#articles tfoot td {
+    text-align: center;
+}
+
+.card-list td:nth-of-type(1), .card-list td:nth-of-type(2) {
+    width: 50px;
+    text-align: center;
+}
+
+.card-list td:last-child {
+    width: 50px;
+    text-align: center;
+    cursor: move;
+}
+
+.card-list tr.picked {
+    opacity: 0.3;
+}
+
+.card-list tr.over {
+    opacity: 0;
+}
+
+.article-panel{
+    width:100%;
+    height: 500px;
+}
